@@ -1,0 +1,54 @@
+baseURL = 'https://rockybranches.com'
+locale = 'en-us'
+title = 'Rocky Branches'
+theme = 'PaperMod'
+publishDir = 'public'
+
+enableRobotsTXT = true
+
+[params]
+  description = 'Scientific consultancy and professional services'
+  author = 'Rocky Branches, LLC'
+  defaultTheme = 'auto'
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = false
+  ShowAllPagesInArchive = false
+  ShowPageNavi = false
+  ShowFullTextinRSS = false
+
+[params.homeInfoParams]
+  Title = 'Rocky Branches'
+  Content = 'Scientific consultancy and professional services.'
+
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/rockybranches'
+
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'services'
+    name = 'Services'
+    url = '/services/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/projects/'
+    weight = 30
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[markup.goldmark.renderer]
+  unsafe = true
