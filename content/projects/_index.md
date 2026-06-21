@@ -6,7 +6,7 @@ Open source projects from Rocky Branches.
 
 ## rb-road-network
 
-Road network analysis tooling in C++. Spatial graph algorithms for transportation modeling and optimization.
+Road network analysis tooling in C++. Geospatial deep-RL methods for market area analysis, transportation modeling and optimization.
 
 ## scriptyscripts
 
@@ -33,17 +33,5 @@ Visualization tooling for spatial and scientific data.
 Docker-based setup for QGIS and PostGIS, enabling reproducible geospatial analysis environments.
 
 ## Forks & Contributions
-
-- **[howdy](https://github.com/boltgolt/howdy)** — Windows Hello-style facial authentication for Linux
-- **[OllamaGTTS](https://github.com/ExoFi-Labs/OllamaGTTS)** — Google Text-to-Speech for Ollama
-- **[perplexity-ai-toolkit](https://github.com/PerplexityAI)** — CLI and Python wrapper for Perplexity LLMs
-- **[datasette-parquet](https://github.com/hydradatabase/datasette-parquet)** — DuckDB, Parquet, CSV support for Datasette
-- **[ComfyUI-Launcher](https://github.com/ComfyUI-Launcher)** — Run ComfyUI workflows with zero setup
-- **[django-grpc-framework](https://github.com/djangogrpc/django-grpc-framework)** — gRPC for Django
-- **[blink-mind-desktop](https://github.com/awehook/blink-mind-desktop)** — Cross-platform mind mapping app
-- **[nix-gui](https://github.com/nix-gui/nix-gui)** — Use NixOS without coding
-- **[django-nixos](https://github.com/nixos-django/django-nixos)** — NixOS/NixOps configuration for Django
-- **[pmbootstrap](https://github.com/postmarketOS/pmbootstrap)** — Install alternative Android OS
-- **[authentik_traefik](https://github.com/brokenscripts/authentik_traefik)** — Authentik behind Traefik
 
 All projects available on [GitHub](https://github.com/rockybranches).
