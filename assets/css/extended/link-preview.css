@@ -1,0 +1,74 @@
+#link-preview {
+  position: fixed;
+  z-index: 9999;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  max-width: 340px;
+  font-size: 0.825rem;
+  line-height: 1.5;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  top: 0;
+  left: 0;
+}
+
+#link-preview.visible {
+  opacity: 1;
+}
+
+#link-preview .lp-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  word-break: break-all;
+}
+
+#link-preview .lp-desc {
+  color: var(--secondary);
+  margin-bottom: 0.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#link-preview .lp-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.775rem;
+  color: var(--secondary);
+  align-items: center;
+}
+
+#link-preview .lp-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#link-preview .lp-stars svg {
+  width: 14px;
+  height: 14px;
+}
+
+#link-preview .lp-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+#link-preview .lp-lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#link-preview .lp-loading {
+  color: var(--secondary);
+  font-size: 0.775rem;
+}

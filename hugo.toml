@@ -1,4 +1,4 @@
-baseURL = 'https://rockybranches.com'
+baseURL = 'https://www.rockybranches.com'
 locale = 'en-us'
 title = 'Rocky Branches'
 theme = 'PaperMod'
@@ -52,3 +52,7 @@ enableRobotsTXT = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
