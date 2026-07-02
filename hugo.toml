@@ -1,4 +1,4 @@
-baseURL = 'https://www.rockybranches.com'
+baseURL = 'https://rockybranches.github.io'
 locale = 'en-us'
 title = 'Rocky Branches'
 theme = 'PaperMod'
