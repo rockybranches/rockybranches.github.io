@@ -10,3 +10,6 @@
 
 # Dependencies
 /node_modules
+
+# cloudflare
+.wrangler/
