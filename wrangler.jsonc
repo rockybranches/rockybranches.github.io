@@ -1,17 +1,26 @@
 {
-  "observability": {
-    "enabled": false,
-    "head_sampling_rate": 1,
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1,
-      "persist": true,
-      "invocation_logs": true
+    "name": "rockybranches.github.io",
+    "compatibility_date": "2026-07-02",
+    "build": {
+        "command": "chmod a+x ./scripts/build.sh && ./scripts/build.sh"
     },
-    "traces": {
-      "enabled": false,
-      "persist": true,
-      "head_sampling_rate": 1
+    "assets": {
+        "directory": "./public",
+        "not_found_handling": "404-page"
+    },
+    "observability": {
+        "enabled": false,
+        "head_sampling_rate": 1,
+        "logs": {
+            "enabled": true,
+            "head_sampling_rate": 1,
+            "persist": true,
+            "invocation_logs": true
+        },
+        "traces": {
+            "enabled": false,
+            "persist": true,
+            "head_sampling_rate": 1
+        }
     }
-  }
 }
