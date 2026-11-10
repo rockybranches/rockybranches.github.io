@@ -30,6 +30,13 @@ The [project changelog](https://github.com/rockybranches/rb-road-network/blob/8c
 
 + [Source Code](https://github.com/rockybranches/rb-road-network)
 
+## rb-rimrock
+
+A collaborative project supporting the Rimrock-Snowstorm mining project in Nevada, USA. **rb-rimrock** is a Python pipeline and command-line tool (`rimrock`) that loads drill-hole assay data, correlates element concentrations against gold (Au), and produces bar plots, pie charts, and interactive map popups using `geopandas`, `plotly`, and `folium`. A FastAPI web interface serves the results, and the data can be packaged into a database for Cloudflare D1.
+
++ [Project Site](https://rb-rimrock.rockybranches.com)
++ [Source Code](https://github.com/rockybranches/rb-rimrock)
+
 ## rb-viz
 
 Visualization tooling for spatial and scientific data.
