@@ -16,15 +16,13 @@ hugo --minify
 
 ## Brand
 
-The Rocky Branches logo, icons and design tokens live in `static/brand/` and are served at `/brand/`:
+The logo, icons and design tokens are inherited from [rb-brand](https://github.com/rockybranches/rb-brand), the single
+source for Rocky Branches branding. Do not edit them here.
 
-| File | Use |
-| --- | --- |
-| `mark.svg`, `mark-mono.svg`, `logo.svg` | The mark, a one-colour version, and the mark with the name |
-| `favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`, `icon-512.png` | App and browser icons |
-| `icons.svg` | Icon sprite: `<svg><use href="/brand/icons.svg#rb-search"/></svg>` |
-| `tokens.css` | Colours, type, spacing, radii and layout widths as `--rb-*` variables |
-
-`assets/css/extended/rb-theme.css` maps the tokens onto PaperMod. The other Rocky Branches apps
-(rockybranches-auth, rb-assay, rb-road-network) embed the same values, so change `tokens.css` first
-and copy the change across.
+- `static/brand/` holds copies of the rb-brand files, served at `/brand/`. Refresh them with
+  `scripts/sync-brand.sh <path to an rb-brand checkout>` (default `../rb-brand`).
+- `assets/css/extended/rb-theme.css` maps the rb-brand token values onto PaperMod. If a token
+  changes in rb-brand, update the matching value there.
+- The header logo in `hugo.toml` and `layouts/partials/rb_mark.html` are inline copies of
+  `logo/mark.svg`.
+- Copy follows the writing rules in the rb-brand README.

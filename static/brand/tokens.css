@@ -1,6 +1,5 @@
-/* Rocky Branches design tokens. The canonical copy lives in
-   rockybranches.github.io/static/brand/tokens.css; each app embeds the same
-   values under its own variable names. Change a value here first. */
+/* Rocky Branches design tokens, from github.com/rockybranches/rb-brand.
+   Edit them there: copies in other repositories are overwritten or re-embedded from it. */
 :root {
   color-scheme: light dark;
 

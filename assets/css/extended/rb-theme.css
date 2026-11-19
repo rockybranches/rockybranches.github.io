@@ -1,5 +1,6 @@
-/* Rocky Branches theme for PaperMod. Values come from static/brand/tokens.css;
-   this file maps them onto the theme's own variables and adds the home page
+/* Rocky Branches theme for PaperMod. Colour, type and shape values are inherited from
+   github.com/rockybranches/rb-brand (tokens.css, copied to static/brand/). Change them there,
+   not here. This file maps them onto the theme's own variables and adds the home page
    layout. */
 :root {
   --rb-bg: #f7f5f0;
