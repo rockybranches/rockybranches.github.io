@@ -5,6 +5,7 @@ theme = 'PaperMod'
 publishDir = 'public'
 
 enableRobotsTXT = true
+copyright = '© Rocky Branches, LLC'
 
 [params]
   description = 'Scientific consultancy and professional services'
@@ -35,7 +36,7 @@ enableRobotsTXT = true
 
 [params.homeInfoParams]
   Title = 'Rocky Branches'
-  Content = 'We provide expert consulting in scientific computing, geospatial analysis, infrastructure automation, and custom software development.'
+  Content = 'We help research and industry teams with scientific computing, geospatial analysis, infrastructure automation, developer tooling, and AI and data pipelines.'
 
 [[params.services]]
   name = 'Scientific computing'
