@@ -28,33 +28,33 @@ County boundaries are checked against the reachable grid: a county is included w
 
 The [project changelog](https://github.com/rockybranches/rb-road-network/blob/8ce9dbedf2d4db8b2b93dfb4f39116f6f35493aa/CHANGELOG.md#unreleased) tracks the current direction: making analyses easier to run at multiple locations with a CSV-driven batch command, and automatically rendering a Plotly map after each run (with an option to skip rendering). The same work adds CLI tests and improves error handling for missing or unreadable GIS data.
 
-+ [Source Code](https://github.com/rockybranches/rb-road-network)
++ [Source code](https://github.com/rockybranches/rb-road-network)
 
 ## rb-rimrock
 
 A collaborative project supporting the Rimrock-Snowstorm mining project in Nevada, USA. **rb-rimrock** is a Python pipeline and command-line tool (`rimrock`) that loads drill-hole assay data, correlates element concentrations against gold (Au), and produces bar plots, pie charts, and interactive map popups using `geopandas`, `plotly`, and `folium`. A FastAPI web interface serves the results, and the data can be packaged into a database for Cloudflare D1.
 
-+ [Project Site](https://rb-rimrock.rockybranches.com)
-+ [Source Code](https://github.com/rockybranches/rb-rimrock)
++ [Project site](https://rb-rimrock.rockybranches.com)
++ [Source code](https://github.com/rockybranches/rb-rimrock)
 
 ## rb-viz
 
 Visualization tooling for spatial and scientific data.
 
-+ [Source Code](https://github.com/rockybranches/rb-viz)
++ [Source code](https://github.com/rockybranches/rb-viz)
 
 ## docker-qgis-postgis
 
 Docker-based setup for QGIS and PostGIS, enabling reproducible geospatial analysis environments.
 
-+ [Source Code](https://github.com/rockybranches/docker-qgis-postgis)
++ [Source code](https://github.com/rockybranches/docker-qgis-postgis)
 
 ## terrachem
 
 3D terrain and geochemistry generator. Procedural world-building with simulated mineral distribution and erosion.
 
-+ [Source Code](https://github.com/rockybranches/terrachem)
++ [Source code](https://github.com/rockybranches/terrachem)
 
-## Forks & Contributions
+---
 
-All projects available on [GitHub](https://github.com/rockybranches).
+All of our projects, forks, and contributions are on [GitHub](https://github.com/rockybranches).

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="Rocky Branches">
+  <style>
+    .rock { fill: #14524b; }
+    .branch { stroke: #a8501c; }
+    .node { fill: #a8501c; }
+    .word { fill: #1b211f; font: 700 24px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: -0.3px; }
+    @media (prefers-color-scheme: dark) {
+      .rock { fill: #6fc7b8; }
+      .branch { stroke: #e0a060; }
+      .node { fill: #e0a060; }
+      .word { fill: #e9ece8; }
+    }
+  </style>
+  <path class="rock" d="M3 43 15.5 26.5 24 35l8-11.5L45 43z"/>
+  <g class="branch" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 34V11"/>
+    <path d="M24 27.5 14.5 18v-4"/>
+    <path d="M24 22l8.5-8.5"/>
+  </g>
+  <g class="node">
+    <circle cx="24" cy="8" r="3.4"/>
+    <circle cx="14.5" cy="11" r="3.4"/>
+    <circle cx="34.5" cy="11.5" r="3.4"/>
+  </g>
+  <text class="word" x="58" y="33">Rocky Branches</text>
+</svg>

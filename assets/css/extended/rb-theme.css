@@ -1,0 +1,127 @@
+/* Rocky Branches theme for PaperMod. Colour, type and shape values are inherited from
+   github.com/rockybranches/rb-brand (tokens.css, copied to static/brand/). Change them there,
+   not here. This file maps them onto the theme's own variables and adds the home page
+   layout. */
+:root {
+  --rb-bg: #f7f5f0;
+  --rb-surface: #fffdf9;
+  --rb-surface-2: #efebe3;
+  --rb-ink: #1b211f;
+  --rb-ink-2: #4c5753;
+  --rb-muted: #626b66;
+  --rb-line: #ddd7cb;
+  --rb-accent: #14524b;
+  --rb-accent-hover: #0e3f3a;
+  --rb-accent-ink: #ffffff;
+  --rb-accent-soft: #dcebe7;
+  --rb-copper: #a8501c;
+  --rb-focus: #14524b59;
+  --rb-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --rb-font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --theme: var(--rb-bg);
+  --entry: var(--rb-surface);
+  --primary: var(--rb-ink);
+  --secondary: var(--rb-muted);
+  --tertiary: var(--rb-line);
+  --content: var(--rb-ink);
+  --code-bg: var(--rb-surface-2);
+  --code-block-bg: #10201e;
+  --border: var(--rb-line);
+  --radius: 10px;
+  --main-width: 720px;
+  --nav-width: 1024px;
+}
+
+:root[data-theme="dark"] {
+  --rb-bg: #121615;
+  --rb-surface: #1a201e;
+  --rb-surface-2: #232b28;
+  --rb-ink: #e9ece8;
+  --rb-ink-2: #b9c2bd;
+  --rb-muted: #8f9a94;
+  --rb-line: #323c38;
+  --rb-accent: #6fc7b8;
+  --rb-accent-hover: #8fd8cb;
+  --rb-accent-ink: #0b1f1c;
+  --rb-accent-soft: #1b3531;
+  --rb-copper: #e0a060;
+  --rb-focus: #6fc7b859;
+
+  --theme: var(--rb-bg);
+  --entry: var(--rb-surface);
+  --primary: var(--rb-ink);
+  --secondary: var(--rb-muted);
+  --tertiary: var(--rb-line);
+  --content: var(--rb-ink);
+  --code-bg: var(--rb-surface-2);
+  --code-block-bg: #0c1413;
+  --border: var(--rb-line);
+}
+
+body { font-family: var(--rb-font); }
+code, pre, kbd { font-family: var(--rb-font-mono); }
+.list, [data-theme="dark"] .list { background: var(--rb-bg); }
+
+/* Header: the mark sits beside the name. */
+.logo a { display: inline-flex; align-items: center; gap: 10px; letter-spacing: -0.01em; }
+.logo a svg { width: 30px; height: 30px; flex: none; }
+.rb-mark .rock { fill: var(--rb-accent); }
+.rb-mark .branch { stroke: var(--rb-copper); }
+.rb-mark .node { fill: var(--rb-copper); }
+#menu a { border-radius: 6px; }
+#menu .active { color: var(--rb-accent); }
+
+/* Links and focus. */
+.md-content a, .post-content a, .entry-content a {
+  color: var(--rb-accent);
+  box-shadow: none;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--rb-accent) 40%, transparent);
+  text-underline-offset: 3px;
+}
+.md-content a:hover, .post-content a:hover, .entry-content a:hover { text-decoration-color: currentColor; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--rb-accent); outline-offset: 2px; border-radius: 4px; }
+
+/* Headings: section titles carry a short copper rule. */
+.post-title, .page-header h1 { letter-spacing: -0.02em; }
+.md-content h2, .post-content h2 { letter-spacing: -0.01em; margin-top: 40px; }
+.md-content h2::before, .post-content h2::before {
+  content: ""; display: block; width: 32px; height: 3px; border-radius: 2px;
+  background: var(--rb-copper); margin-bottom: 12px;
+}
+.post-content img, .md-content img { border: 1px solid var(--rb-line); border-radius: 10px; }
+
+/* Home page. */
+.rb-hero { padding: 32px 0 8px; }
+.rb-hero .rb-mark { width: 72px; height: 72px; display: block; margin-bottom: 20px; }
+.rb-eyebrow { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rb-copper); margin-bottom: 8px; }
+.rb-hero h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 12px; }
+.rb-hero p { font-size: 1.125rem; line-height: 1.55; color: var(--rb-ink-2); max-width: 56ch; margin: 0 0 24px; }
+.rb-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.rb-btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px;
+  border: 1px solid var(--rb-line); border-radius: 6px; background: var(--rb-surface);
+  color: var(--rb-ink); font-weight: 600; font-size: 1rem;
+}
+.rb-btn:hover { border-color: var(--rb-accent); color: var(--rb-accent); }
+.rb-btn.primary { background: var(--rb-accent); border-color: var(--rb-accent); color: var(--rb-accent-ink); }
+.rb-btn.primary:hover { background: var(--rb-accent-hover); border-color: var(--rb-accent-hover); color: var(--rb-accent-ink); }
+.rb-icon { width: 20px; height: 20px; flex: none; }
+
+.rb-services {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px;
+  margin: 40px 0 16px; padding: 0; list-style: none;
+}
+.rb-services li {
+  background: var(--rb-surface); border: 1px solid var(--rb-line); border-radius: 10px; padding: 16px;
+}
+.rb-services .rb-icon {
+  width: 36px; height: 36px; padding: 7px; border-radius: 8px; margin-bottom: 12px;
+  background: var(--rb-accent-soft); color: var(--rb-accent);
+}
+.rb-services h2 { font-size: 1rem; line-height: 1.3; margin: 0 0 4px; }
+.rb-services p { font-size: 0.875rem; line-height: 1.5; color: var(--rb-ink-2); margin: 0; }
+
+.footer { color: var(--rb-muted); }
+.footer a { color: inherit; }

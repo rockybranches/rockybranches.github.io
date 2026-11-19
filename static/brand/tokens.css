@@ -1,0 +1,113 @@
+/* Rocky Branches design tokens, from github.com/rockybranches/rb-brand.
+   Edit them there: copies in other repositories are overwritten or re-embedded from it. */
+:root {
+  color-scheme: light dark;
+
+  /* Colour: warm stone neutrals, spruce for actions, copper for emphasis. */
+  --rb-bg: #f7f5f0;
+  --rb-surface: #fffdf9;
+  --rb-surface-2: #efebe3;
+  --rb-ink: #1b211f;
+  --rb-ink-2: #4c5753;
+  --rb-muted: #626b66;
+  --rb-line: #ddd7cb;
+  --rb-accent: #14524b;
+  --rb-accent-hover: #0e3f3a;
+  --rb-accent-ink: #ffffff;
+  --rb-accent-soft: #dcebe7;
+  --rb-copper: #a8501c;
+  --rb-copper-soft: #f6e3d2;
+  --rb-danger: #a3271f;
+  --rb-danger-soft: #fbe9e6;
+  --rb-warn: #855600;
+  --rb-warn-soft: #fbf0d4;
+  --rb-ok: #1f6b3a;
+  --rb-ok-soft: #e2f1e6;
+  --rb-focus: #14524b59;
+  --rb-header: #10332f;
+  --rb-header-ink: #f7f5f0;
+
+  /* Type: system faces, so nothing loads from a third party. */
+  --rb-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --rb-font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --rb-text-xs: 0.75rem;
+  --rb-text-sm: 0.875rem;
+  --rb-text-md: 1rem;
+  --rb-text-lg: 1.25rem;
+  --rb-text-xl: 1.5rem;
+  --rb-text-2xl: 2rem;
+
+  /* Space: a 4px scale. */
+  --rb-space-1: 4px;
+  --rb-space-2: 8px;
+  --rb-space-3: 12px;
+  --rb-space-4: 16px;
+  --rb-space-5: 24px;
+  --rb-space-6: 32px;
+  --rb-space-7: 48px;
+
+  /* Shape. */
+  --rb-radius-sm: 6px;
+  --rb-radius: 10px;
+  --rb-radius-pill: 999px;
+  --rb-shadow: 0 1px 2px rgb(27 33 31 / 5%), 0 4px 16px rgb(27 33 31 / 6%);
+
+  /* Layout: reading column, app content, and the top bar. */
+  --rb-width-text: 720px;
+  --rb-width-app: 1360px;
+  --rb-bar-height: 56px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --rb-bg: #121615;
+    --rb-surface: #1a201e;
+    --rb-surface-2: #232b28;
+    --rb-ink: #e9ece8;
+    --rb-ink-2: #b9c2bd;
+    --rb-muted: #8f9a94;
+    --rb-line: #323c38;
+    --rb-accent: #6fc7b8;
+    --rb-accent-hover: #8fd8cb;
+    --rb-accent-ink: #0b1f1c;
+    --rb-accent-soft: #1b3531;
+    --rb-copper: #e0a060;
+    --rb-copper-soft: #3d2a17;
+    --rb-danger: #f08a80;
+    --rb-danger-soft: #3f1c18;
+    --rb-warn: #e3b25c;
+    --rb-warn-soft: #3a2e12;
+    --rb-ok: #7fd19a;
+    --rb-ok-soft: #173221;
+    --rb-focus: #6fc7b859;
+    --rb-header: #0d1f1d;
+    --rb-header-ink: #e9ece8;
+    --rb-shadow: none;
+  }
+}
+
+:root[data-theme="dark"] {
+  --rb-bg: #121615;
+  --rb-surface: #1a201e;
+  --rb-surface-2: #232b28;
+  --rb-ink: #e9ece8;
+  --rb-ink-2: #b9c2bd;
+  --rb-muted: #8f9a94;
+  --rb-line: #323c38;
+  --rb-accent: #6fc7b8;
+  --rb-accent-hover: #8fd8cb;
+  --rb-accent-ink: #0b1f1c;
+  --rb-accent-soft: #1b3531;
+  --rb-copper: #e0a060;
+  --rb-copper-soft: #3d2a17;
+  --rb-danger: #f08a80;
+  --rb-danger-soft: #3f1c18;
+  --rb-warn: #e3b25c;
+  --rb-warn-soft: #3a2e12;
+  --rb-ok: #7fd19a;
+  --rb-ok-soft: #173221;
+  --rb-focus: #6fc7b859;
+  --rb-header: #0d1f1d;
+  --rb-header-ink: #e9ece8;
+  --rb-shadow: none;
+}
