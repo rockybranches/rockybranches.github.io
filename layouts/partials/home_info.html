@@ -1,0 +1,25 @@
+{{- /* Home page: the mark, a one-line description and the service areas.
+       Icons come from static/brand/icons.svg. */ -}}
+{{- $icons := "brand/icons.svg" | relURL -}}
+<article class="rb-hero">
+    {{ partial "rb_mark.html" . }}
+    <div class="rb-eyebrow">{{ site.Params.description }}</div>
+    <h1>{{ site.Params.homeInfoParams.Title | default site.Title }}</h1>
+    <p>{{ site.Params.homeInfoParams.Content | markdownify }}</p>
+    <div class="rb-actions">
+        <a class="rb-btn primary" href="{{ "services/" | relLangURL }}">Our services
+            <svg class="rb-icon" aria-hidden="true"><use href="{{ $icons }}#rb-arrow-right"/></svg></a>
+        <a class="rb-btn" href="{{ "projects/" | relLangURL }}">Projects</a>
+    </div>
+    {{- with site.Params.services }}
+    <ul class="rb-services">
+        {{- range . }}
+        <li>
+            <svg class="rb-icon" aria-hidden="true"><use href="{{ $icons }}#rb-{{ .icon }}"/></svg>
+            <h2>{{ .name }}</h2>
+            <p>{{ .text }}</p>
+        </li>
+        {{- end }}
+    </ul>
+    {{- end }}
+</article>

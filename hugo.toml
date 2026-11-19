@@ -21,9 +21,42 @@ enableRobotsTXT = true
   ShowPageNavi = false
   ShowFullTextinRSS = false
 
+[params.label]
+  text = 'Rocky Branches'
+  iconSVG = '<svg class="rb-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path class="rock" d="M3 43 15.5 26.5 24 35l8-11.5L45 43z"/><g class="branch" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 34V11"/><path d="M24 27.5 14.5 18v-4"/><path d="M24 22l8.5-8.5"/></g><g class="node"><circle cx="24" cy="8" r="3.4"/><circle cx="14.5" cy="11" r="3.4"/><circle cx="34.5" cy="11.5" r="3.4"/></g></svg>'
+
+[params.assets]
+  favicon = 'brand/favicon.svg'
+  favicon16x16 = 'brand/favicon-16x16.png'
+  favicon32x32 = 'brand/favicon-32x32.png'
+  apple_touch_icon = 'brand/apple-touch-icon.png'
+  safari_pinned_tab = 'brand/mark-mono.svg'
+  theme_color = '#14524b'
+
 [params.homeInfoParams]
   Title = 'Rocky Branches'
-  Content = 'Scientific consultancy and professional services.'
+  Content = 'We provide expert consulting in scientific computing, geospatial analysis, infrastructure automation, and custom software development.'
+
+[[params.services]]
+  name = 'Scientific computing'
+  icon = 'flask'
+  text = 'Algorithms, simulation pipelines and performance work.'
+[[params.services]]
+  name = 'Geospatial analysis'
+  icon = 'map-pin'
+  text = 'GIS consulting, spatial data and road network analysis.'
+[[params.services]]
+  name = 'Infrastructure automation'
+  icon = 'layers'
+  text = 'Kubernetes, Proxmox VE and NixOS, configured and deployed.'
+[[params.services]]
+  name = 'Developer tooling'
+  icon = 'branch'
+  text = 'Command-line tools, CI/CD pipelines and environments.'
+[[params.services]]
+  name = 'AI and data pipelines'
+  icon = 'chart'
+  text = 'LLM integration and analytics, prototype to production.'
 
 [[params.socialIcons]]
   name = 'github'
