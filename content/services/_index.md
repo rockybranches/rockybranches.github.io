@@ -24,4 +24,4 @@ LLM integration, data processing workflows, and analytics tooling from prototype
 
 ## Contact
 
-Want to work with us? Tell us about your project by opening an issue or discussion on [GitHub](https://github.com/rockybranches).
+Want to work with us? Email [contact@rockybranches.com](mailto:contact@rockybranches.com) and tell us about your project. You can also find us on [GitHub](https://github.com/rockybranches).
