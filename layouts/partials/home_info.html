@@ -10,7 +10,8 @@
         <a class="rb-btn primary" href="{{ "services/" | relLangURL }}">Our services
             <svg class="rb-icon" aria-hidden="true"><use href="{{ $icons }}#rb-arrow-right"/></svg></a>
         <a class="rb-btn" href="{{ "projects/" | relLangURL }}">Projects</a>
-        <a class="rb-btn" href="{{ "services/#contact" | relLangURL }}">Get in touch</a>
+        <a class="rb-btn" href="mailto:contact@rockybranches.com">
+            <svg class="rb-icon" aria-hidden="true"><use href="{{ $icons }}#rb-mail"/></svg>Get in touch</a>
     </div>
     {{- with site.Params.services }}
     <ul class="rb-services">
